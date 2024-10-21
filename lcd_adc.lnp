@@ -1,0 +1,8 @@
+--cpu ARM7TDMI
+".\lpc2300.o"
+".\lcd.o"
+".\lcd_adc_2024ht01026.o"
+--strict --scatter ".\lcd_adc.sct"
+--summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list ".\lcd_adc.map" -o .\lcd_adc.axf
